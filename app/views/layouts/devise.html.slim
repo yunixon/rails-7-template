@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Rails 7 Template
+    meta content="width=device-width, initial-scale=1" name="viewport" /
+    = csrf_meta_tags
+    = csp_meta_tag
+
+    = stylesheet_link_tag    'application', 'data-turbo-track' => 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => 'reload'
+
+  body
+    .container
+      = render 'shared/flash'
+      .row.justify-content-md-center
+        .col-auto.bg-light.border.rounded.mt-5.p-5
+          = yield
