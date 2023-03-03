@@ -16,6 +16,19 @@
 bundle exec rails db:create
 bundle exec rails db:migrate
 bundle exec rails db:seed
+
+bundle exec rails secret
+bundle exec rails credentials:edit -e development
+
+secret_key_base: xxxxxx
+support_email: xxx@xxx.xxx
+
+sentry:
+  dsn: xxx
+
+mail:
+  sender_name: xxx
+  sender_email: xxx@xxx.xxx
 ```
 
 ## Start
