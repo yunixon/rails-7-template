@@ -336,6 +336,8 @@ GEM
       connection_pool (>= 2.2.5)
       rack (~> 2.0)
       redis (>= 4.5.0, < 5)
+    sidekiq-failures (1.0.4)
+      sidekiq (>= 4.0.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -429,6 +431,7 @@ DEPENDENCIES
   sentry-sidekiq
   shoulda-matchers
   sidekiq
+  sidekiq-failures
   simple_form
   slim-rails
   sprockets-rails
