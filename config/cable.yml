@@ -8,7 +8,7 @@ test:
 staging:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
-  channel_prefix: rails_7_template_production
+  channel_prefix: rails_7_template_staging
 
 production:
   adapter: redis
